@@ -1,0 +1,14 @@
+<div class="container-slide">
+  <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide *ngFor = "let img of images">
+      <div class="picsum-img-wrapper">
+        <img [src]="img" alt="Random first slide">
+      </div>
+      <div class="img-home-wrapper">
+        <a routerLink = "/home">
+          <img src="./../../assets/img/iconos/home.png" alt="home" />
+        </a>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
